@@ -1,0 +1,6 @@
+git init - git으로 버전을 관리하겠다고 선언. 
+>> add - commit할 내용의 파일 단위를 선택.
+>> commit - 프로젝트의 변경사항 저장, 코멘트를 달 수 있음.
+>> push - 로컬 repo에서 원격 repo로 commit 내용을 전달. 원격 repo에 변경사항 반영.
+>> pull - 원격 repo에서 생긴 commit을 로컬 repo로 전달.(push와 반대)
+>> clone - 원격 repo의 내용을 새로운 로컬 repo에 연결시킴(소위 다운로드, 기존에 원격 repo의 프로젝트가 없어야 함.)
