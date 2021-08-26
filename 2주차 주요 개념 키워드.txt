@@ -1,0 +1,4 @@
+-issue : 해결해야 할 문제점, 추가기능, 해야할 작업 등등 게시
+-branch : 분업하기 위해 새로운 작업환경을 만들어 줌.
+-merge : 개발이 끝난 branch를 main으로 병합하여 업데이트함.
+-push와 pull의 단위는 branch! 다른 branch의 commit과 함께 push하려면 옵션을 설정해주어야 함(일반적이진 않음, 보통 작업단위는 branch이기 때문)
