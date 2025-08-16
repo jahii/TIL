@@ -1,10 +1,12 @@
 #include <iostream>
+#include <cstring>
 
 class MyString{
     char* string_content;
     int string_length;
     int memory_capacity;
     public:
+    explicit MyString(int capacity);
     MyString(char c);
     MyString(const char* str);
     MyString(const MyString& str);
@@ -28,6 +30,13 @@ class MyString{
     void print() const;
     void println() const;
 };
+
+MyString::MyString(int capacity){
+    string_content = new char[capacity];
+    string_length = 0;
+    memory_capacity = capacity;
+    std::cout <<"Capacity : " << capacity << std::endl;
+}
 
 MyString::MyString(char c){
     string_content = new char[1];
@@ -212,10 +221,10 @@ void MyString::println() const {
     std::cout<<std::endl;
 }
 int main() {
-  MyString str1("abcdef");
-  MyString str2("abcfe");
+//   MyString str1("abcdef");
+//   MyString str2("abcfe");
 
-  std::cout << "str1 and str2 compare : " << str1.compare(str2) << std::endl;
-
+//   std::cout << "str1 and str2 compare : " << str1.compare(str2) << std::endl;
+    MyString s(3);
 }
 
